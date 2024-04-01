@@ -9,6 +9,7 @@
 
   <link integrity="" rel="stylesheet" href="/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
   <link integrity="" rel="stylesheet" href="/assets/my-frontend-app-d41d8cd98f00b204e9800998ecf8427e.css">
+  <script  type="module" src="./js/home.js" ></script>
 
   <style data-styled="active" data-styled-version="5.3.8">
     @font-face {
@@ -32,9 +33,12 @@
 
 <body class="ember-application" data-new-gr-c-s-check-loaded="14.1163.0" data-gr-ext-installed="">
 
+<!--<ul id="itemList"></ul>-->
 
+
+<!-- Main Body -->
 <div>
-  <div style="width: 126px; height: 36px; padding-left: 98px; padding-right: 94px; left: 16px; top: 33px; position: absolute; justify-content: flex-end; align-items: center; display: inline-flex">
+  <div style="width: 126px; height: 36px; padding-left: 98px; padding-right: 94px; left: 18px; top: 33px; position: absolute; justify-content: flex-end; align-items: center; display: inline-flex">
     <div style="text-align: center; color: black; font-size: 30px; font-family: Inter; font-weight: 600; word-wrap: break-word">Home</div>
   </div>
   <a href="search.html" style="text-decoration: none; color: inherit;">
@@ -43,100 +47,19 @@
     <div style="left: 16px; top: 16px; position: absolute; color: #BDBDBD; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Search</div>
   </div>
   </a>
-  <div style="width: 362px; height: 222px; left: 16px; top: 210px; position: absolute">
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 0px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Koala Natural Body Wash</div>
-    </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 126px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Men’s Capilene® Cool Daily Shirt</div>
-    </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 252px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Thousand Fell Men’s Court</div>
-    </div>
+  <div id = "recommendation" style="width: 362px; height: 222px; left: 16px; top: 210px; position: absolute">
     <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Donations Near You</div>
   </div>
-  <div style="width: 362px; height: 222px; left: 16px; top: 744px; position: absolute">
-    <div style="width: 110px; height: 177px; left: 0px; top: 45px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 110px; height: 177px; left: 126px; top: 45px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 110px; height: 177px; left: 252px; top: 45px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Hot Deals</div>
-  </div>
-  <div style="width: 365px; height: 38px; left: 15px; top: 414px; position: absolute">
-    <div style="width: 111px; height: 38px; left: 0px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Biodegradable and eco-frien...</div>
-    <div style="width: 111px; height: 38px; left: 126px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Made with 50-100% recy...</div>
-    <div style="width: 111px; height: 38px; left: 254px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Biodegradable and recy...</div>
-  </div>
-  <div style="width: 363px; height: 38px; left: 16px; top: 680px; position: absolute">
-    <div style="width: 111px; height: 38px; left: 0px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Lightweight georgette fabr...</div>
-    <div style="width: 111px; height: 38px; left: 126px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Modular sofa collection that...</div>
-    <div style="width: 111px; height: 38px; left: 252px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">The ECOBAGS Canvas Tote...</div>
-  </div>
 
-  <div style="width: 362px; height: 222px; left: 16px; top: 477px; position: absolute">
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 0px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Reformation™ Twilight dress</div>
-    </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 126px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Manks™ Blue Velvet Sofa</div>
-    </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 27px; left: 252px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 13px; font-family: Inter; font-weight: 400; word-wrap: break-word">Recycled Canvas Tote Bag</div>
-    </div>
-    <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Recommended For You</div>
-  </div>
-  <div style="width: 362px; height: 230px; left: 13px; top: 996px; position: absolute">
-    <div style="width: 110px; height: 183.38px; padding-bottom: 6.38px; left: 0px; top: 46.62px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 110px; height: 183.38px; padding-bottom: 6.38px; left: 126px; top: 46.62px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 110px; height: 183.38px; padding-bottom: 6.38px; left: 252px; top: 46.62px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Item #1 Name<br>Goes Here</div>
-      <div style="color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">$19.99</div>
-    </div>
-    <div style="width: 131px; height: 25px; left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Daily Deals</div>
-  </div>
-  <div style="width: 131px; height: 25px; left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-  </div>
 </div>
 
 <!-- navigation bar -->
-
 <div style="width: 100%; height: 83px; position: fixed; bottom: 0; background: #FAFAFA; ">
-  <img style="width: 34px; height: 32px; left: 50px; top: 15px; position: absolute" src="images/navicons/homeiconact.png" />
+  <a href="home.html"><img style="width: 34px; height: 32px; left: 50px; top: 15px; position: absolute" src="images/navicons/homeiconact.png" /></a>
   <div style="width: 375px; height: 0.50px; left: 0px; top: 0.50px; position: absolute; background: #BDC5CD"></div>
-  <img style="width: 32px; height: 32px; left: 216px; top: 15px; position: absolute" src="images/navicons/profileicon.png" />
-  <img style="width: 32px; height: 32px; left: 134px; top: 15px; position: absolute" src="images/navicons/uploadicon.png" />
-  <img style="width: 30.69px; height: 32px; left: 294px; top: 15px; position: absolute" src="images/navicons/settingicon.png" />
+  <a href="profile.html"><img style="width: 32px; height: 32px; left: 216px; top: 15px; position: absolute" src="images/navicons/profileicon.png" /></a>
+  <a href="upload.html"><img style="width: 32px; height: 32px; left: 134px; top: 15px; position: absolute" src="images/navicons/uploadicon.png" /></a>
+  <a href="setting.html"> <img style="width: 30.69px; height: 32px; left: 294px; top: 15px; position: absolute" src="images/navicons/settingicon.png" /></a>
 </div>
 
 <div></div><div id="Chat-Plugin-Root" class="compose-root-component"></div>

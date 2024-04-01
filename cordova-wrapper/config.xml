@@ -8,4 +8,7 @@
     <content src="home.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+   <resource-file src="/Users/cici/WebstormProjects/cis/cordova-wrapper/platforms/ios/MyApp/GoogleService-Info.plist" />
+  <access origin="https://*.firebaseio.com" />
+  <access origin="https://*.googleapis.com" />
 </widget>
