@@ -3,6 +3,8 @@ import {
   collection,
   getDocs,
 } from 'https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js';
+
+document.addEventListener('DOMContentLoaded', () => {
 getDocs(collection(db, 'items'))
   .then((querySnapshot) => {
     const itemList = document.getElementById('recommendation'); // Get the container element
@@ -26,3 +28,5 @@ getDocs(collection(db, 'items'))
   .catch((error) => {
     console.error('Error getting documents: ', error);
   });
+
+});

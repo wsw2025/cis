@@ -16,7 +16,9 @@
     "cordova-ios": "^7.0.1",
     "cordova-plugin-androidx": "^1.0.2",
     "cordova-plugin-androidx-adapter": "^1.1.3",
-    "cordova-plugin-firebasex": "^9.0.1-cli"
+    "cordova-plugin-firebasex": "^9.0.1-cli",
+    "cordova-plugin-inappbrowser": "^6.0.0",
+    "cordova-plugin-webview": "^0.0.1"
   },
   "cordova": {
     "platforms": [
@@ -27,7 +29,9 @@
         "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
         "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
         "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true"
-      }
+      },
+      "WebViewer": {},
+      "cordova-plugin-inappbrowser": {}
     }
   },
   "dependencies": {

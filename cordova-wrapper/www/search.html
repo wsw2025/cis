@@ -4,11 +4,13 @@
   <title>Home</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-eval'; connect-src 'self' https://firestore.googleapis.com; img-src 'self' data: https://www.google.com; script-src 'self' https://www.gstatic.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">  <meta name="my-frontend-app/config/environment" content="%7B%22modulePrefix%22%3A%22my-frontend-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22my-frontend-app%22%2C%22version%22%3A%220.0.0%2Be215b3da%22%7D%7D">
 
   <meta name="my-frontend-app/config/environment" content="%7B%22modulePrefix%22%3A%22my-frontend-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22my-frontend-app%22%2C%22version%22%3A%220.0.0%2Be215b3da%22%7D%7D">
 
   <link integrity="" rel="stylesheet" href="/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
   <link integrity="" rel="stylesheet" href="/assets/my-frontend-app-d41d8cd98f00b204e9800998ecf8427e.css">
+  <script  type="module" src="js/search.js" ></script>
 
   <style data-styled="active" data-styled-version="5.3.8">
     @font-face {
@@ -51,10 +53,15 @@
     <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 11px; display: inline-flex">
       <div style="position: relative; top: 10px; color: black; font-size: 16px; font-family: Inter; font-weight: 500; top:10px; word-wrap: break-word"> Items</div>
       <div style="width: 163px; height: 0px; border: 1px #E8E8E8 solid"></div>
-      <div style="width: 100%;  color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word; top:10px;"; >Clothing (49)</div>
-      <div style="width: 100%;  color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word">Sports Equipment (12)</div>
-      <div style="width: 100%; color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word">Books (36)</div>
-      <div style="position: relative; top: 10px; color: black; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Users</div>
+      <div data-category="Food" class="category" style="width: 100%;  color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word; top:10px;"; >Food</div>
+      <div data-category="Clothing" class="category" style="width: 100%;  color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word; top:10px;"; >Clothing</div>
+      <div data-category="SportsEquipment" class="category" style="width: 100%;  color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word">Sports Equipment</div>
+      <div data-category="Books" class="category" style="width: 100%; color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word">Books</div>
+      <div data-category="Educational" class="category" style="width: 100%; color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word">Educational</div>
+      <div data-category="ForChildren" class="category" style="width: 100%; color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word">For Children</div>
+      <div data-category="Others" class="category" style="width: 100%; color: rgba(0, 0, 0, 0.44); font-size: 14px; font-family: Inter; font-weight: 500; text-decoration: underline; word-wrap: break-word">Others</div>
+
+      <div style="position: relative; top: 10px; color: black; font-size: 16px; font-family: Inter; font-weight: 500; top:10px; word-wrap: break-word"> Users</div>
       <div style="width: 163px; height: 0px; border: 1px #E8E8E8 solid"></div>
     </div>
   </div>
@@ -66,8 +73,8 @@
 
     <div style="width: 343px; height: 36px; left: 16px; top: 25px; position: absolute">
       <div onclick="showModal()" style="cursor: pointer; left: 304px; top: 8px; position: absolute; text-align: right; color: #62931B; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Filter</div>
-      <div style="left: 122px; top: 0px; position: absolute; text-align: center; color: black; font-size: 30px; font-family: Inter; font-weight: 600; word-wrap: break-word">
-        Search
+      <div style="width: 126px; height: 36px; position: absolute; left: 50%; transform: translateX(-50%); top: 28px; display: flex; justify-content: center; align-items: center;">
+        <div style="text-align: center; color: black; font-size: 30px; font-family: Inter; font-weight: 600; word-wrap: break-word;">Search</div>
       </div>
       <a href="home.html" style="text-decoration: none; color: inherit;">
         <div style="left: 0px; top: 8px; position: absolute; color: #62931B; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Back</div>
@@ -75,7 +82,7 @@
     </div>
     <div style="width: 343px; height: 50px; left: 16px; top: 107px; position: absolute">
       <div style="width: 343px; height: 50px; left: 0px; top: 0px; position: absolute; background: #F6F6F6; border-radius: 100px; border: 1px solid #E8E8E8;"></div>
-      <input type="text" value="Orange Juice" style="width: 309px; height: 18px; left: 24px; top: 10px; position: absolute; background: transparent; border: none; color: black; font-size: 16px; font-family: Inter; font-weight: 500; padding: 16px 0; box-sizing: border-box; outline: none; border-radius: 100px;" />
+      <input id = "search" type="text" style="width: 309px; height: 18px; left: 24px; top: 10px; position: absolute; background: transparent; border: none; color: black; font-size: 16px; font-family: Inter; font-weight: 500; padding: 16px 0; box-sizing: border-box; outline: none; border-radius: 100px;" />
     </div>
 
     <div style="width: 326px; height: 33px; left: 25px; top: 209px; position: absolute; flex-direction: column; justify-content: center; align-items: flex-start; gap: 14px; display: inline-flex">

@@ -4,11 +4,13 @@
   <title>Result</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-eval'; connect-src 'self' https://firestore.googleapis.com; img-src 'self' data: https://www.google.com; script-src 'self' https://www.gstatic.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *">  <meta name="my-frontend-app/config/environment" content="%7B%22modulePrefix%22%3A%22my-frontend-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22my-frontend-app%22%2C%22version%22%3A%220.0.0%2Be215b3da%22%7D%7D">
 
   <meta name="my-frontend-app/config/environment" content="%7B%22modulePrefix%22%3A%22my-frontend-app%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22%2F%22%2C%22locationType%22%3A%22history%22%2C%22EmberENV%22%3A%7B%22EXTEND_PROTOTYPES%22%3Afalse%2C%22FEATURES%22%3A%7B%7D%2C%22_APPLICATION_TEMPLATE_WRAPPER%22%3Afalse%2C%22_DEFAULT_ASYNC_OBSERVERS%22%3Atrue%2C%22_JQUERY_INTEGRATION%22%3Afalse%2C%22_NO_IMPLICIT_ROUTE_MODEL%22%3Atrue%2C%22_TEMPLATE_ONLY_GLIMMER_COMPONENTS%22%3Atrue%7D%2C%22APP%22%3A%7B%22name%22%3A%22my-frontend-app%22%2C%22version%22%3A%220.0.0%2Be215b3da%22%7D%7D">
 
   <link integrity="" rel="stylesheet" href="/assets/vendor-d41d8cd98f00b204e9800998ecf8427e.css">
   <link integrity="" rel="stylesheet" href="/assets/my-frontend-app-d41d8cd98f00b204e9800998ecf8427e.css">
+  <script  type="module" src="js/result.js" ></script>
 
   <style data-styled="active" data-styled-version="5.3.8">
     @font-face {
@@ -35,8 +37,6 @@
 
 <div style="width: 100%; height: 100%; background: white; flex-direction: column; justify-content: center; align-items: center; display: inline-flex">
   <div style="width: 375px; height: 812.50px; position: relative">
-
-
     <div style="width: 343px; height: 36px; left: 16px; top: 25px; position: absolute">
       <div style="left: 122px; top: 0px; position: absolute; text-align: center; color: black; font-size: 30px; font-family: Inter; font-weight: 600; word-wrap: break-word">
         Results
@@ -45,31 +45,10 @@
         <div style="left: 0px; top: 8px; position: absolute; color: #62931B; font-size: 16px; font-family: Inter; font-weight: 500; word-wrap: break-word">Back</div>
       </a>
     </div>
-
-
-  <div style="width: 362px; height: 222px; left: 16px; top: 110px; position: absolute">
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 0px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Koala Natural Body Wash</div>
-    </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 126px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Men’s Capilene® Cool Daily Shirt</div>
-    </div>
-    <div style="width: 110px; height: 177px; padding-bottom: 25px; left: 252px; top: 45px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 8px; display: inline-flex">
-      <div style="width: 110px; height: 110px; background: #F6F6F6; border-radius: 8px"></div>
-      <div style="width: 110px; color: black; font-size: 14px; font-family: Inter; font-weight: 400; word-wrap: break-word">Thousand Fell Men’s Court</div>
-    </div>
+  </div>
+  <div id = "result" style="width: 362px; height: 222px; left: 16px; top: 100px; position: absolute">
     <div style="left: 0px; top: 0px; position: absolute; color: black; font-size: 24px; font-family: Inter; font-weight: 500; word-wrap: break-word">Search Results</div>
   </div>
-
-  <div style="width: 365px; height: 38px; left: 15px; top: 310px; position: absolute">
-    <div style="width: 111px; height: 38px; left: 0px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Biodegradable and eco-frien...</div>
-    <div style="width: 111px; height: 38px; left: 126px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Made with 50-100% recy...</div>
-    <div style="width: 111px; height: 38px; left: 254px; top: 0px; position: absolute; color: black; font-size: 14px; font-family: Inter; font-weight: 600; word-wrap: break-word">Biodegradable and recy...</div>
-  </div>
-
-
 
 </div>
 

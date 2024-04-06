@@ -11,4 +11,7 @@
    <resource-file src="/Users/cici/WebstormProjects/cis/cordova-wrapper/platforms/ios/MyApp/GoogleService-Info.plist" />
   <access origin="https://*.firebaseio.com" />
   <access origin="https://*.googleapis.com" />
+  <access origin="*"/>
+  <preference name="scheme" value="app" />
+  <preference name="hostname" value="localhost" />
 </widget>

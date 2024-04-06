@@ -77,5 +77,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
   }
 }
