@@ -1,0 +1,46 @@
+{
+  "cordova-plugin-firebasex": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-firebasex@^9.0.1-cli"
+    },
+    "is_top_level": true,
+    "variables": {
+      "FIREBASE_ANALYTICS_COLLECTION_ENABLED": "true",
+      "FIREBASE_PERFORMANCE_COLLECTION_ENABLED": "true",
+      "FIREBASE_CRASHLYTICS_COLLECTION_ENABLED": "true"
+    }
+  },
+  "cordova-plugin-androidx": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-androidx@^1.0.2"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "cordova-plugin-androidx-adapter": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-androidx-adapter@^1.1.0"
+    },
+    "is_top_level": false,
+    "variables": {}
+  },
+  "WebViewer": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-webview"
+    },
+    "is_top_level": true,
+    "variables": {}
+  },
+  "cordova-plugin-inappbrowser": {
+    "source": {
+      "type": "registry",
+      "id": "cordova-plugin-inappbrowser@6.0.0"
+    },
+    "is_top_level": true,
+    "variables": {}
+  }
+}
