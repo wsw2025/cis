@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Profile Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .profile-header {
+      background-color: green;
+      height: 33.33vh;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: white;
+      /* Add background image or specify image source with 'url()' */
+    }
+
+    .profile-title {
+      color: white;
+      font-size: 48px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .big-text {
+      color: black;
+      font-size: 30px;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .profile-return {
+      color: white;
+      font-size: 20px;
+      margin-top: 10px;
+      text-align: left;
+      margin-left: 10px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .user-profile {
+      color: green;
+      text-align: center;
+      font-size: 30px;
+    }
+
+    .profile-info {
+      background-color: white;
+      padding: 20px;
+    }
+
+    .normal-text {
+      color: black;
+      text-align: center;
+      font-size: 25px;
+      margin-right: 130px;
+      margin-left: 130px;
+    }
+
+    .center-text {
+      text-align: center;
+      font-size: 25px;
+      color: black;
+      margin-top: 20px;
+    }
+
+    .listings-content {
+      display: none;
+    }
+
+    .reviews-content {
+      display: none;
+    }
+  </style>
+  <script>
+    function showListings() {
+      document.getElementById("listings-content").style.display = "block";
+      document.getElementById("reviews-content").style.display = "none";
+    }
+
+    function showReviews() {
+      document.getElementById("listings-content").style.display = "none";
+      document.getElementById("reviews-content").style.display = "block";
+    }
+
+    function goBack() {
+      window.history.back();
+    }
+  </script>
+</head>
+<body>
+<div class="profile-header">
+  <div class="profile-return">
+    <button onclick="goBack()">Return</button>
+  </div>
+  <h1 class="profile-title">Profile</h1>
+</div>
+
+<img src="assets/Images/pfp.png" alt="pfp">
+
+<div class="container">
+  <div class="profile-info">
+    <h1 class="user-profile">User Profile</h1>
+    <div class="user-profile">Description</div>
+    <div class="container">
+      <button class="normal-text" onclick="showListings()">Listings</button>
+      <button class="normal-text" onclick="showReviews()">Reviews</button>
+    </div>
+  </div>
+</div>
+
+<div id="listings-content" class="container listings-content">
+  <!-- Content for Listings -->
+  <h2>Listings</h2>
+  <p>Item 1</p>
+  <p>Item 2</p>
+  <p>Item 3</p>
+</div>
+
+<div id="reviews-content" class="container reviews-content">
+  <!-- Content for Reviews -->
+  <h2 class="big-text">Sellers Average Rating</h2>
+  <div class="container">
+    <img src="assets/Images/star3.jpg" alt="3 stars">
+  </div>
+</div>
+</body>
+</html>
