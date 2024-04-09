@@ -5,7 +5,13 @@
     <author email="dev@cordova.apache.org" href="https://cordova.apache.org">
         Apache Cordova Team
     </author>
-    <content src="index.html" />
+    <content src="home.html" />
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
+   <resource-file src="/Users/cici/WebstormProjects/cis/cordova-wrapper/platforms/ios/MyApp/GoogleService-Info.plist" />
+  <access origin="https://*.firebaseio.com" />
+  <access origin="https://*.googleapis.com" />
+  <access origin="*"/>
+  <preference name="scheme" value="app" />
+  <preference name="hostname" value="localhost" />
 </widget>
