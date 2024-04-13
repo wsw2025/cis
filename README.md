@@ -1,4 +1,4 @@
-# Newest version from CIS Shareable app, built with js, HTML, CSS
+# Newest version for CIS Shareable app, built with js, HTML, CSS
 
 # Follow ALL USEFUL RESOURCES HERE
 https://docs.google.com/document/d/1sYXRjsJd19Lsl8PSUNlVJat00SyUBR2VdizIbHQ_tvc/edit  
